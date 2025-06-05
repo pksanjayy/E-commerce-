@@ -1,0 +1,67 @@
+/* SuccessPopup.css */
+.success-popup-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+}
+
+.success-popup {
+    background: white;
+    padding: 2rem;
+    border-radius: 10px;
+    text-align: center;
+    max-width: 500px;
+    width: 90%;
+}
+
+.success-icon {
+    color: green;
+    font-size: 4rem;
+    margin-bottom: 1rem;
+}
+
+.success-actions {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.success-actions button, 
+.success-actions a {
+    padding: 0.8rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.2s;
+}
+
+.continue-btn {
+    background: #007bff;
+    color: white;
+}
+
+.new-cart-btn {
+    background: #28a745;
+    color: white;
+}
+
+.view-orders-btn {
+    background: #6c757d;
+    color: white;
+}
+
+.success-actions button:hover, 
+.success-actions a:hover {
+    opacity: 0.9;
+    transform: translateY(-2px);
+}
